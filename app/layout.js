@@ -21,6 +21,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        <main className="max-w-6xl border">
+          {children}
+        </main>
         {children}
       </body>
     </html>
